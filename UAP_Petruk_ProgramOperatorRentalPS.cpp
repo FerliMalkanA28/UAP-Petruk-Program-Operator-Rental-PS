@@ -48,6 +48,7 @@ void AntrianMasukQueue(int no){
 //===============================STACK STACK STACK==================================
 int top = -1;
 string Stack[MAXSTACK];
+asa
 
 
 //================================STACK STACK STACK=================================
