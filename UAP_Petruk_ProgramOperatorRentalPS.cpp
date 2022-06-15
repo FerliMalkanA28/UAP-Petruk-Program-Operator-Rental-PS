@@ -116,7 +116,7 @@ bool isEmpty_Stack(){
 
 void push_Stack(){
     if (isFull_Stack()){
-        cout << ">> Tumpukan sudah penuh !" << endl;
+        cout << ">> Tumpukan ini sudah penuh !" << endl;
     }
     else {
         top++;
