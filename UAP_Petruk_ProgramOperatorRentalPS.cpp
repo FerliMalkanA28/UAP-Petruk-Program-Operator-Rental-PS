@@ -38,11 +38,11 @@ bool IsFullQueue(){
 
 void AntrianMasukQueue(int no){
     if (IsEmptyQueue()){
-        head=tail=0;
+        head = tail=0;
     }else {
         tail++;
     }
-    nomer[tail]=no;
+    nomer[tail] = no;
 }
 
 void AntrianKeluarQueue(){
@@ -50,8 +50,8 @@ void AntrianKeluarQueue(){
         cout<<"Antrian sudah kosong ! ";
         getch();
     }else {
-        for(int a=head;a<tail;a++){
-            nomer[a]=nomer[a+1];
+        for(int a = head ; a < tail ; a++){
+            nomer[a] = nomer[a+1];
         }
         tail--;
         if(tail == -1){
@@ -116,12 +116,12 @@ bool isEmpty_Stack(){
 
 void push_Stack(){
     if (isFull_Stack()){
-        cout << ">> Tumpukan ini sudah penuh !" << endl;
+        cout << ">> Tumpukan sudah penuh !" << endl;
     }
     else {
         top++;
         cout << "Catatan : Gunakan '_' untuk mewakili spasi" << endl;
-        cout << ">> Masukan Judul gamenya : ";
+        cout << ">> Masukan Judul CD : ";
         cin  >> Stack[top];
         cout << "\nPada Tingkatan ke " << (top + 1) << endl;
         cout << "CD [" << Stack[top] << "] Telah Ditambah!" << endl;
