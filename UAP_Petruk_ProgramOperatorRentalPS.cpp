@@ -9,6 +9,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#define MAXQUEUE 50
+#define MAXSTACK 50
+
+using namespace std;
+
+//===============================QUEUE QUEUE QUEUE==================================
+
 int nomer[MAXQUEUE];
 int head=-1;
 int tail=-1;
