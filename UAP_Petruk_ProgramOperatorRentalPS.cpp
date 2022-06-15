@@ -192,4 +192,56 @@ int main(){
 				cout << "Choose ! "; cin >> ChooseQueue;
 				cout << "\n\n";
 				
+				if(ChooseQueue == 1){
+						if(IsFullQueue()) {
+							cout<<"Antrian sudah penuh, mohon tunggu beberapa saat lagi ";
+						}
+						else{
+							urut=que;
+
+							Print_Stack();
+
+							cout << "Masukan pilihan game : "; cin >> game;
+
+							AntrianMasukQueue(antrian);
+							cout << "---------------------------------" << endl;
+							cout << "|          NO. ANTRIAN          |" << endl;
+							cout << "|               " << que << "               |" << endl;
+							cout << "|Pilihan game : " << game << "  |" << endl;
+							cout << "---------------------------------" << endl;
+							cout << "|       Silahkan Mengantri      |" << endl;
+							cout << "|      Menunggu " << tail << " Antrian       |" << endl;
+							cout << "---------------------------------" << endl;
+							p++;
+							getche();
+						}
+					}
+					else if(ChooseQueue == 2){
+						cout << "=================================" << endl;
+						cout << "No. Antri : [" << nomer[head] << "]";
+						cout << "\n=================================" << endl;
+						AntrianKeluarQueue();
+						cout << "Silahkan Dipanggil !" << endl;
+						getche();
+					}
+					else if(ChooseQueue == 3){
+						ViewQueue();
+						getche();
+					}
+					else if(ChooseQueue == 4){
+						ClearQueue();
+						cout<<"Antrian dikosongkan ! ";
+						getche();
+					}
+					else if(ChooseQueue == 5){
+						cout << "Kembali ke beranda";
+						pilih = 0;
+					}
+					else{
+						cout << "Masukan anda salah ! \n"<< endl;
+						getche();
+					}
+					getche();
+				} while (ChooseQueue != 5);
+				break;
 				
