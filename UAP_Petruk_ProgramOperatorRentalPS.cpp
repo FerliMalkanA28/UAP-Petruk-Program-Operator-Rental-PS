@@ -166,6 +166,7 @@ int main(){
     int pilih, p=1, urut, ChooseSwitch, ChooseQueue, que=1, antrian;
 	string game = "Belum ada game yang dipilih";
 
+	loading();
 	do{
         system("CLS");
 		cout << "===================================" << endl;
