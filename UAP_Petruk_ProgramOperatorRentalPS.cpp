@@ -20,7 +20,7 @@ int head=-1;
 int tail=-1;
 
 bool IsEmptyQueue(){
-  if(tail==-1){
+   if(tail == -1){
        return true;
    }else{
        return false;
@@ -28,7 +28,7 @@ bool IsEmptyQueue(){
 }
 
 bool IsFullQueue(){
-   if(tail==MAXQUEUE-1){
+   if(tail == MAXQUEUE-1){
        return true;
    }else{
        return false;
@@ -42,6 +42,39 @@ void AntrianMasukQueue(int no){
         tail++;
     }
     nomer[tail]=no;
+}
+
+void AntrianKeluarQueue(){
+    if(IsEmptyQueue()){
+        cout<<"Antrian sudah kosong ! ";
+        getch();
+    }else {
+        for(int a=head;a<tail;a++){
+            nomer[a]=nomer[a+1];
+        }
+        tail--;
+        if(tail == -1){
+            head = -1;
+        }
+    }
+}
+
+void ClearQueue(){
+     head=tail=-1;
+}
+
+void ViewQueue(){
+    if(IsEmptyQueue()){
+        cout<<"Antrian kosong ! ";
+
+    }else {
+        system("CLS");
+        for(int a=head;a<=tail;a++){
+            cout << "==============================="
+                << "\n >> No. Antri : [" << nomer[a] << "]"
+                << "\n==============================="<< endl;
+        }
+    }
 }
 //===============================QUEUE QUEUE QUEUE==================================
 
@@ -112,10 +145,9 @@ void Print_Stack(){
         cout << "========================" << endl;
     }
 }
-
-
 //================================STACK STACK STACK=================================
 
+//==================================MAIN MAIN MAIN==================================
 int main(){
     int pilih, p=1, urut, ChooseSwitch, ChooseQueue, que=1, antrian;
 	string game = "Belum ada game yang dipilih";
@@ -133,9 +165,9 @@ int main(){
         cout << "===================================" << endl;
         cout << " Masukan Pilihan : " ; cin >> pilih;
 
-	switch (pilih) {
+        switch (pilih) {
 	        case 1:
-		system("CLS");
+				system("CLS");
 	            do {
 	                cout << "==========================================" << endl;
 	                cout << "|  Program Penyimpanan CD Playstation 2  |" << endl;
@@ -148,8 +180,8 @@ int main(){
 	                cout << "\n4. Beranda";
 	                cout << "\n\n>> Choose : ";
 	                cin >> ChooseSwitch;
-			    
-			switch(ChooseSwitch){
+	
+	                switch(ChooseSwitch){
 	                    case 1:
 	                        push_Stack();
 	                        getche();
@@ -176,23 +208,22 @@ int main(){
 	                system("CLS");
 	            } while (ChooseSwitch != 4);
 	            break;
-
-		case 2:
-			do{
-				system("CLS");
-				cout << "===============================" << endl; 
-				cout << "|  PROGRAM OPERATOR RENTAL PS |" << endl;
-				cout << "===============================" << endl;
-				cout << "|1. Tambah Antrian            |" << endl;
-				cout << "|2. Panggil Antrian           |" << endl;
-				cout << "|3. Lihat daftar antrian      |" << endl;
-				cout << "|4. Format                    |" << endl;
-				cout << "|5. Beranda                   |" << endl;
-				cout << "===============================" << endl;
-				cout << "Choose ! "; cin >> ChooseQueue;
-				cout << "\n\n";
-				
-				if(ChooseQueue == 1){
+	            
+	        case 2:
+				do{
+					system("CLS");
+					cout << "===============================" << endl; 
+					cout << "|  PROGRAM OPERATOR RENTAL PS |" << endl;
+					cout << "===============================" << endl;
+					cout << "|1. Tambah Antrian            |" << endl;
+					cout << "|2. Panggil Antrian           |" << endl;
+					cout << "|3. Lihat daftar antrian      |" << endl;
+					cout << "|4. Format                    |" << endl;
+					cout << "|5. Beranda                   |" << endl;
+					cout << "===============================" << endl;
+					cout << "Choose ! "; cin >> ChooseQueue;
+					cout << "\n\n";
+					if(ChooseQueue == 1){
 						if(IsFullQueue()) {
 							cout<<"Antrian sudah penuh, mohon tunggu beberapa saat lagi ";
 						}
@@ -244,7 +275,7 @@ int main(){
 					getche();
 				} while (ChooseQueue != 5);
 				break;
-			
+
 			case 3:
 				cout << "Terima Kasih telah menggunakan program ini";
 				break;
@@ -257,3 +288,5 @@ int main(){
 		}
     }while (pilih != 3);
 }
+
+//==================================MAIN MAIN MAIN==================================
