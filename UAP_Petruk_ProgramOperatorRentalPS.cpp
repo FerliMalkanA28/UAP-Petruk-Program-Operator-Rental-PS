@@ -210,6 +210,7 @@ int main(){
 	                        getche();
 	                        break;
 	                    case 4:
+				loading();
 	                        cout << "Kembali ke Beranda " << endl;
 	                        getche();
 							pilih = 0;
@@ -279,6 +280,7 @@ int main(){
 						getche();
 					}
 					else if(ChooseQueue == 5){
+						loading();
 						cout << "Kembali ke beranda";
 						pilih = 0;
 					}
