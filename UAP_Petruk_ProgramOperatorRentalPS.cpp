@@ -244,4 +244,16 @@ int main(){
 					getche();
 				} while (ChooseQueue != 5);
 				break;
-				
+			
+			case 3:
+				cout << "Terima Kasih telah menggunakan program ini";
+				break;
+					
+			default :
+				cout << "Pilihan tidak ada\nMasukan pilihan sesuai dengan daftar" << endl;
+				pilih = 0;
+				getche();
+				break;
+		}
+    }while (pilih != 3);
+}
