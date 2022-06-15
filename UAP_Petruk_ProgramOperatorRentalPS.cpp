@@ -176,3 +176,20 @@ int main(){
 	                system("CLS");
 	            } while (ChooseSwitch != 4);
 	            break;
+
+		case 2:
+			do{
+				system("CLS");
+				cout << "===============================" << endl; 
+				cout << "|  PROGRAM OPERATOR RENTAL PS |" << endl;
+				cout << "===============================" << endl;
+				cout << "|1. Tambah Antrian            |" << endl;
+				cout << "|2. Panggil Antrian           |" << endl;
+				cout << "|3. Lihat daftar antrian      |" << endl;
+				cout << "|4. Format                    |" << endl;
+				cout << "|5. Beranda                   |" << endl;
+				cout << "===============================" << endl;
+				cout << "Choose ! "; cin >> ChooseQueue;
+				cout << "\n\n";
+				
+				
