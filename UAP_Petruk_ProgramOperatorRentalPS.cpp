@@ -44,6 +44,21 @@ void AntrianMasukQueue(int no){
     nomer[tail]=no;
 }
 
+void AntrianKeluarQueue(){
+    if(IsEmptyQueue()){
+        cout<<"Antrian sudah kosong ! ";
+        getch();
+    }else {
+        for(int a=head;a<tail;a++){
+            nomer[a]=nomer[a+1];
+        }
+        tail--;
+        if(tail == -1){
+            head = -1;
+        }
+    }
+}
+
 //===============================QUEUE QUEUE QUEUE==================================
 
 //===============================STACK STACK STACK==================================
