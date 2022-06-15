@@ -86,7 +86,7 @@ void loading(){
 	int a;
 
 for (a>=0; a<=100; a++){
-      cout << "Sedang loading " << a << "%" << endl;
+      cout << "Loading " << a << "%" << endl;
       system("cls");
 	}
 }
