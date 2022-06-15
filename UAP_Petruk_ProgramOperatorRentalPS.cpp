@@ -67,5 +67,29 @@ bool isEmpty_Stack(){
     }
 }
 
+void push_Stack(){
+    if (isFull_Stack()){
+        cout << ">> Tumpukan sudah penuh !" << endl;
+    }
+    else {
+        top++;
+        cout << "Catatan : Gunakan '_' untuk mewakili spasi" << endl;
+        cout << ">> Masukan Judul CD : ";
+        cin  >> Stack[top];
+        cout << "\nPada Tingkatan ke " << (top + 1) << endl;
+        cout << "CD [" << Stack[top] << "] Telah Ditambah!" << endl;
+    }
+}
+
+void pop_Stack(){
+    if (isEmpty_Stack()){
+        cout << ">> Tumpukan Kosong!" << endl;
+    }
+    else {
+        cout << "\nCD [" << Stack[top] << "] pada tingkatan ke " << (top + 1) << " dalam tumpukan diambil!" << endl;
+        top--;
+    }
+}
+
 
 //================================STACK STACK STACK=================================
