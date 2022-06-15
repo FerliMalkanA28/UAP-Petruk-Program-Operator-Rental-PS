@@ -19,46 +19,6 @@ int nomer[MAXQUEUE];
 int head=-1;
 int tail=-1;
 
-bool IsEmptyQueue(){
-   if(tail == -1){
-       return true;
-   }else{
-       return false;
-   }
-}
-
-bool IsFullQueue(){
-   if(tail == MAXQUEUE-1){
-       return true;
-   }else{
-       return false;
-   }
-}
-
-void AntrianMasukQueue(int no){
-    if (IsEmptyQueue()){
-        head=tail=0;
-    }else {
-        tail++;
-    }
-    nomer[tail]=no;
-}
-
-void AntrianKeluarQueue(){
-    if(IsEmptyQueue()){
-        cout<<"Antrian sudah kosong ! ";
-        getch();
-    }else {
-        for(int a=head;a<tail;a++){
-            nomer[a]=nomer[a+1];
-        }
-        tail--;
-        if(tail == -1){
-            head = -1;
-        }
-    }
-}
-
 //===============================QUEUE QUEUE QUEUE==================================
 
 //===============================STACK STACK STACK==================================
