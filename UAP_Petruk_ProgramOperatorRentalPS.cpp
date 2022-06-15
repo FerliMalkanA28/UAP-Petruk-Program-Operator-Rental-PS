@@ -9,12 +9,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define MAXQUEUE 20
-#define MAXSTACK 50
-
-using namespace std;
-
-//===============================QUEUE QUEUE QUEUE==================================
 int nomer[MAXQUEUE];
 int head=-1;
 int tail=-1;
@@ -77,6 +71,18 @@ void ViewQueue(){
     }
 }
 //===============================QUEUE QUEUE QUEUE==================================
+
+//====================LOADING LOADING LOADING====================================
+
+void loading(){
+	int a;
+
+for (a>=0; a<=100; a++){
+      cout << "Sedang loading " << a << "%" << endl;
+      system("cls");
+	}
+}
+//====================LOADING LOADING LOADING====================================
 
 //===============================STACK STACK STACK==================================
 int top = -1;
