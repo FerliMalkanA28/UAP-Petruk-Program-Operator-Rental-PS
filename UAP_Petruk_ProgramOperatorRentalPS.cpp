@@ -121,7 +121,7 @@ void push_Stack(){
     else {
         top++;
         cout << "Catatan : Gunakan '_' untuk mewakili spasi" << endl;
-        cout << ">> Masukan Judul CD : ";
+        cout << ">> Masukan Judul gamenya : ";
         cin  >> Stack[top];
         cout << "\nPada Tingkatan ke " << (top + 1) << endl;
         cout << "CD [" << Stack[top] << "] Telah Ditambah!" << endl;
