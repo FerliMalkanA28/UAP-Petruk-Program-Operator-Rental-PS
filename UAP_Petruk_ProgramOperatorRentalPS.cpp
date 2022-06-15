@@ -35,6 +35,15 @@ bool IsFullQueue(){
    }
 }
 
+void AntrianMasukQueue(int no){
+    if (IsEmptyQueue()){
+        head=tail=0;
+    }else {
+        tail++;
+    }
+    nomer[tail]=no;
+}
+
 //===============================QUEUE QUEUE QUEUE==================================
 
 //===============================STACK STACK STACK==================================
