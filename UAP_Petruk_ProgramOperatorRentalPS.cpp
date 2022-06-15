@@ -63,10 +63,11 @@ void ViewQueue(){
 
     }else {
         system("CLS");
-        for(int a=head;a<=tail;a++){
-            cout << "==============================="
-                << "\n >> No. Antri : [" << nomer[a] << "]"
-                << "\n==============================="<< endl;
+	    head=0;
+        for(head; head <=t ail; head++){
+            cout << "===============================";
+            cout << "\n >> No. Antri : [" << head << "]";
+            cout << "\n==============================="<< endl;
         }
     }
 }
