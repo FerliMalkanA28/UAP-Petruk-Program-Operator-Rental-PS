@@ -48,7 +48,24 @@ void AntrianMasukQueue(int no){
 //===============================STACK STACK STACK==================================
 int top = -1;
 string Stack[MAXSTACK];
-asa
+
+bool isFull_Stack(){
+    if (top == MAXSTACK -1){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool isEmpty_Stack(){
+    if (top == -1){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
 
 //================================STACK STACK STACK=================================
