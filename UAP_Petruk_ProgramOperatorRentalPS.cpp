@@ -133,7 +133,7 @@ void pop_Stack(){
         cout << ">> Tumpukan Kosong!" << endl;
     }
     else {
-        cout << "\nCD [" << Stack[top] << "] pada tingkatan ke " << (top + 1) << " dalam tumpukan diambil!" << endl;
+        cout << "\nGame [" << Stack[top] << "] pada tingkatan ke " << (top + 1) << " dalam tumpukan diambil!" << endl;
         top--;
     }
 }
