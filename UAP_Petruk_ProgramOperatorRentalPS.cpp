@@ -19,6 +19,13 @@ int nomer[MAXQUEUE];
 int head=-1;
 int tail=-1;
 
+bool IsEmptyQueue(){
+   if(tail == -1){
+       return true;
+   }else{
+       return false;
+   }
+}
 
 //===============================QUEUE QUEUE QUEUE==================================
 
