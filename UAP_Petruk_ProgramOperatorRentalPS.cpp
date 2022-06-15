@@ -115,3 +115,21 @@ void Print_Stack(){
 
 
 //================================STACK STACK STACK=================================
+
+int main(){
+    int pilih, p=1, urut, ChooseSwitch, ChooseQueue, que=1, antrian;
+	string game = "Belum ada game yang dipilih";
+
+	do{
+        system("CLS");
+		cout << "===================================" << endl;
+        cout << "|          Selamat Datang         |" << endl;
+        cout << "|  di Program Operator Rental PS  |" << endl;
+        cout << "|   Rental PS : Thomas Slebew     |" << endl;
+        cout << "===================================" << endl;
+        cout << "|1. List Game                     |" << endl;
+        cout << "|2. Player                        |" << endl;
+        cout << "|3. Exit                          |" << endl;
+        cout << "===================================" << endl;
+        cout << " Masukan Pilihan : " ; cin >> pilih;
+
