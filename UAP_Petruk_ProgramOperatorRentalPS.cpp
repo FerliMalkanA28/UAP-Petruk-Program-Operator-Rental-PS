@@ -133,3 +133,18 @@ int main(){
         cout << "===================================" << endl;
         cout << " Masukan Pilihan : " ; cin >> pilih;
 
+	switch (pilih) {
+	        case 1:
+		system("CLS");
+	            do {
+	                cout << "==========================================" << endl;
+	                cout << "|  Program Penyimpanan CD Playstation 2  |" << endl;
+	                cout << "==========================================" << endl;
+	                cout << endl;
+	                Print_Stack();
+	                cout << "\n1. Push";
+	                cout << "\n2. Pop";
+	                cout << "\n3. Clear";
+	                cout << "\n4. Beranda";
+	                cout << "\n\n>> Choose : ";
+	                cin >> ChooseSwitch;
