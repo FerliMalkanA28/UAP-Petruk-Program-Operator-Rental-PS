@@ -27,6 +27,14 @@ bool IsEmptyQueue(){
    }
 }
 
+bool IsFullQueue(){
+   if(tail == MAXQUEUE-1){
+       return true;
+   }else{
+       return false;
+   }
+}
+
 //===============================QUEUE QUEUE QUEUE==================================
 
 //===============================STACK STACK STACK==================================
