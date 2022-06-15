@@ -148,3 +148,31 @@ int main(){
 	                cout << "\n4. Beranda";
 	                cout << "\n\n>> Choose : ";
 	                cin >> ChooseSwitch;
+			    
+			switch(ChooseSwitch){
+	                    case 1:
+	                        push_Stack();
+	                        getche();
+	                        break;
+	                    case 2:
+	                        pop_Stack();
+	                        getche();
+	                        break;
+	                    case 3:
+	                        clear_Stack();
+	                        cout << "\nTumpukan CD Telah Berhasil Disingkirkan" << endl;
+	                        getche();
+	                        break;
+	                    case 4:
+	                        cout << "Kembali ke Beranda " << endl;
+	                        getche();
+							pilih = 0;
+	                        break;
+	                    default :
+	                        cout << "Pilihan tidak ada\nMasukan pilihan sesuai dengan daftar" << endl;
+	                        getche();
+	                        break;
+	                }
+	                system("CLS");
+	            } while (ChooseSwitch != 4);
+	            break;
