@@ -91,5 +91,27 @@ void pop_Stack(){
     }
 }
 
+int clear_Stack(){
+    return top = -1;
+}
+
+void Print_Stack(){
+    if (isEmpty_Stack()){
+        cout << "\tStack : " << endl;
+        cout << "========================" << endl;
+        cout << "\tEmpty! " << endl;
+        cout << "========================" << endl;
+    }
+    else{
+        cout << "\t\t Stack : " << endl;
+        cout << "========================" << endl;
+
+        for (int i = top; i >= 0; i--){
+            cout << "XXXXX[ " << Stack[i] << " ]XXXXX" << endl;
+        }
+        cout << "========================" << endl;
+    }
+}
+
 
 //================================STACK STACK STACK=================================
