@@ -163,7 +163,7 @@ void Print_Stack(){
 
 //==================================MAIN MAIN MAIN==================================
 int main(){
-    int pilih, p=1, urut, ChooseSwitch, ChooseQueue, que=1, antrian;
+    int pilih, ChooseSwitch, ChooseQueue, que=1, antrian;
 	string game = "Belum ada game yang dipilih";
 
 	loading();
@@ -244,8 +244,6 @@ int main(){
 							cout<<"Antrian sudah penuh, mohon tunggu beberapa saat lagi ";
 						}
 						else{
-							urut=que;
-
 							Print_Stack();
 
 							cout << "Masukan pilihan game : "; cin >> game;
@@ -259,7 +257,7 @@ int main(){
 							cout << "|       Silahkan Mengantri      |" << endl;
 							cout << "|      Menunggu " << tail << " Antrian       |" << endl;
 							cout << "---------------------------------" << endl;
-							p++;
+							que++;
 							getche();
 						}
 					}
